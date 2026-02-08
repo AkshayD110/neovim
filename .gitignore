@@ -1,0 +1,14 @@
+# Neovim
+*.swp
+*.swo
+*~
+
+# Lazy.nvim plugin directory
+lazy-lock.json
+
+# LSP logs
+lsp.log
+
+# Personal environment files (if you create any)
+.env
+.env.local
