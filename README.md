@@ -4,16 +4,16 @@ Personal Neovim configuration for IDE-like development experience.
 
 ## Features
 
-- 🎨 Treesitter syntax highlighting
-- 🔍 LSP support for multiple languages (Java, Python, Lua, C/C++, Go, TypeScript, etc.)
-- 📝 Code completion with nvim-cmp
-- 🗂️ File explorer with nvim-tree
-- 🔭 Fuzzy finder with Telescope
-- 📊 Code outline with Aerial
-- 🎯 Git integration with Gitsigns
-- 📚 Obsidian notes integration
-- 🎫 Jira integration
-- ⚡ Fast startup with lazy.nvim
+- Treesitter syntax highlighting
+- LSP support for multiple languages (Java, Python, Lua, C/C++, Go, TypeScript, etc.)
+- Code completion with nvim-cmp
+- File explorer with nvim-tree
+- Fuzzy finder with Telescope
+- Code outline with Aerial
+- Git integration with Gitsigns
+- Obsidian notes integration
+- Jira integration
+- Fast startup with lazy.nvim
 
 ## Requirements
 
