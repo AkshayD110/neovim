@@ -19,7 +19,7 @@ require('lazy').setup(
   },
   {
     install = {
-      colorscheme = { 'nightly' },
+      colorscheme = { 'habamax' },
     },
     checker = {
       enabled = true,

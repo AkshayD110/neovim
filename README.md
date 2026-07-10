@@ -10,9 +10,12 @@ Personal Neovim configuration for IDE-like development experience.
 - File explorer with nvim-tree
 - Fuzzy finder with Telescope
 - Code outline with Aerial
+- Sticky context header with treesitter-context
 - Git integration with Gitsigns
 - Obsidian notes integration
 - Jira integration
+- AI pair-programming with Claude Code (claudecode.nvim)
+- UI/QoL utilities via snacks.nvim
 - Fast startup with lazy.nvim
 
 ## Requirements
@@ -78,6 +81,8 @@ Leader key: `<Space>`
 - `<leader>ff` - Find files
 - `<leader>fg` - Live grep
 - `<leader>fb` - Find buffers
+- `<leader>fc` - Files changed vs `main` branch
+- `<leader>gs` - Git status (uncommitted changes)
 
 ### LSP
 - `gd` - Go to definition
@@ -106,6 +111,17 @@ Leader key: `<Space>`
 - `<leader>jv` - View Jira issue
 - `<leader>jo` - Open Jira issue in browser
 
+### AI / Claude Code
+- `<leader>ac` - Toggle Claude
+- `<leader>af` - Focus Claude
+- `<leader>ar` - Resume Claude session
+- `<leader>aC` - Continue Claude session
+- `<leader>am` - Select Claude model
+- `<leader>ab` - Add current buffer to context
+- `<leader>as` - Send selection to Claude (visual mode) / add file (in file tree)
+- `<leader>aa` - Accept diff
+- `<leader>ad` - Deny diff
+
 ## Structure
 
 ```
@@ -129,14 +145,15 @@ nvim/
 
 ### Color Issues
 
-If you experience display issues with colors (blue/yellow screens), disable true color support:
-
-In `lua/aksh/settings.lua`:
+This config ships with `termguicolors` disabled (256-color mode) for broad terminal
+compatibility. If your terminal fully supports true color and you want richer colors,
+enable it in `lua/aksh/settings.lua`:
 ```lua
-o.termguicolors = false
+o.termguicolors = true
 ```
 
-This uses 256-color mode which is more compatible with some terminal emulators.
+Conversely, if you experience display issues (blue/yellow screens), keep it set to
+`false`, which is more compatible with some terminal emulators.
 
 ### LSP Not Working
 

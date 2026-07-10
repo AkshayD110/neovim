@@ -1,7 +1,7 @@
 local o = vim.o
 local g = vim.g
 
-o.termguicolors = true
+o.termguicolors = false
 o.background = 'dark'
 o.number = true
 o.cursorline = true

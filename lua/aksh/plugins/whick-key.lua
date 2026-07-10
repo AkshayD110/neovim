@@ -14,6 +14,7 @@ return {
 
     -- Group labels so which-key shows names instead of "+N keymaps"
     local groups = {
+      { '<leader>a', group = 'AI/Claude' },
       { '<leader>e', group = 'Explorer' },
       { '<leader>f', group = 'Find' },
       { '<leader>t', group = 'Terminal/Tab' },
@@ -34,6 +35,7 @@ return {
     else
       -- Fallback for older which-key API
       wk.register({
+        a = { name = 'AI/Claude' },
         e = { name = 'Explorer' },
         f = { name = 'Find' },
         t = { name = 'Terminal/Tab' },

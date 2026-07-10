@@ -12,3 +12,7 @@ lsp.log
 # Personal environment files (if you create any)
 .env
 .env.local
+
+# Local editor/agent settings
+.claude/
+.claude/settings.local.json

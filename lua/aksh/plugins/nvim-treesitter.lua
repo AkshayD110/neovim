@@ -34,7 +34,6 @@ return {
           'lua',
           'vim',
           'make',
-          'org',
           'python',
           'regex',
           'rust',
